@@ -12,21 +12,21 @@ public class CombatSceneHandler : MonoBehaviour
     // Start is called before the first frame update
     private void Awake () {
         Debug.Log("Example1.Awake() was called for ID: " + this.GetInstanceID());
-        Party p = ScriptableObject.CreateInstance("Party") as Party;
-        Party e = ScriptableObject.CreateInstance("Party") as Party;
-        foreach (var s in m_pSprites)  {
-            GameObject c = Instantiate(s, new Vector3(0, 0), Quaternion.identity, this.GetComponent<Transform>()) as GameObject;
+        Party playerParty = ScriptableObject.CreateInstance("Party") as Party;
+        Party enemyParty = ScriptableObject.CreateInstance("Party") as Party;
+        foreach (var sprite in m_pSprites)  {
+            GameObject character = Instantiate(sprite, new Vector3(0, 0), Quaternion.identity, this.GetComponent<Transform>()) as GameObject;
             //p.AddPartyMember(c);
         }
         /*
-        foreach (var s in m_eSprites)  {
-            Character c = gameObject.AddComponent<Character>() as Character;
-            c.SetSprite(s);
-            e.AddPartyMember(c);
+        foreach (var sprite in m_eSprites)  {
+            Character character = gameObject.AddComponent<Character>() as Character;
+            character.SetSprite(sprite);
+            enemyParty.AddPartyMember(character);
         }
         */
-        CombatHandler ch = gameObject.AddComponent<CombatHandler>() as CombatHandler; 
-        ch.Setup(p, e);
+        CombatHandler combatHandler = gameObject.AddComponent<CombatHandler>() as CombatHandler; 
+        combatHandler.Setup(playerParty, enemyParty);
 
         InitCamera();
     }
