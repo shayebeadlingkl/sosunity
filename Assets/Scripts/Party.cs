@@ -24,12 +24,12 @@ public class Party : ScriptableObject
         return this.m_party;
     }
 
-    public void AddPartyMember (Character c) {
-        this.m_party.Add(c);
+    public void AddPartyMember (Character character) {
+        this.m_party.Add(character);
     }
 
-    public void RemovePartyMember (Character c) {
-        this.m_party.Remove(c);
+    public void RemovePartyMember (Character character) {
+        this.m_party.Remove(character);
     }
 
 

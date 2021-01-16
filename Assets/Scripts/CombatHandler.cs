@@ -15,9 +15,9 @@ public class CombatHandler : MonoBehaviour
     private Party playerParty;
     private Party enemyParty;
 
-    public void Setup(Party p, Party e) {
-        this.playerParty = p;
-        this.enemyParty = e;
+    public void Setup(Party playerParty, Party enemyParty) {
+        this.playerParty = playerParty;
+        this.enemyParty = enemyParty;
         InitCharacters();
     }
 
@@ -25,15 +25,13 @@ public class CombatHandler : MonoBehaviour
     }
 
     private void InitCharacters () {
-        List<Character> p = playerParty.GetParty();
-        foreach (Character c in p) {
-            //Instantiate(c, new Vector3(0, 0), Quaternion.identity, this.GetComponent<Transform>());
+        List<Character> party = playerParty.GetParty();
+        foreach (Character character in party) {
+            //Instantiate(char, new Vector3(0, 0), Quaternion.identity, this.GetComponent<Transform>());
         }
-        p = enemyParty.GetParty();
-        foreach (Character c in p) {
+        party = enemyParty.GetParty();
+        foreach (Character character in party) {
         }
     }
-
-     
 
 }

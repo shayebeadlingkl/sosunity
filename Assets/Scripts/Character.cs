@@ -6,7 +6,7 @@ public class Character : MonoBehaviour
 {
     private Sprite m_sprite;
 
-    public void SetSprite (Sprite s) {
-        this.m_sprite = s;
+    public void SetSprite (Sprite sprite) {
+        this.m_sprite = sprite;
     }
 }
