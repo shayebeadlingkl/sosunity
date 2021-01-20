@@ -402,9 +402,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e81dfa2c4db4945936f4c02a016099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pSprites:
+  m_pCharacters:
   - {fileID: 7512911660300833527, guid: ffd8d2bd20feb9a4598ae1337f5aed50, type: 3}
-  m_eSprites: []
+  m_eCharacters:
+  - {fileID: 1976495865827305947, guid: fdf14e7767dab6d488826afc921181e4, type: 3}
   m_camera: {fileID: 0}
 --- !u!4 &686791365
 Transform:
