@@ -6,7 +6,7 @@ public class Party : ScriptableObject
 {
     
     private Party m_instance;
-    private List<Character> m_party = new List<Character>();
+    private List<GameObject> m_party = new List<GameObject>();
 
     private void Awake () {
         m_instance = this;
@@ -20,15 +20,15 @@ public class Party : ScriptableObject
         return m_instance;
     }
 
-    public List<Character> GetParty () {
+    public List<GameObject> GetParty () {
         return this.m_party;
     }
 
-    public void AddPartyMember (Character character) {
+    public void AddPartyMember (GameObject character) {
         this.m_party.Add(character);
     }
 
-    public void RemovePartyMember (Character character) {
+    public void RemovePartyMember (GameObject character) {
         this.m_party.Remove(character);
     }
 
