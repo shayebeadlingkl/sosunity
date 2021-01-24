@@ -14,6 +14,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7512911660300833289, guid: ffd8d2bd20feb9a4598ae1337f5aed50,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7512911660300833289, guid: ffd8d2bd20feb9a4598ae1337f5aed50,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7512911660300833289, guid: ffd8d2bd20feb9a4598ae1337f5aed50,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04838682
       objectReference: {fileID: 0}
@@ -65,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 7512911660300833527, guid: ffd8d2bd20feb9a4598ae1337f5aed50,
         type: 3}
       propertyPath: m_Name
-      value: pfPlayerOverworld
+      value: pfPlayerOverworld Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffd8d2bd20feb9a4598ae1337f5aed50, type: 3}

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2714727537588520451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2714727537588520453}
+  - component: {fileID: 2714727537588520452}
+  m_Layer: 0
+  m_Name: CombatSceneHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2714727537588520453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2714727537588520451}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 658.5, y: 314, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2714727537588520452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2714727537588520451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e81dfa2c4db4945936f4c02a016099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pCharacters:
+  - {fileID: 7512911660300833527, guid: ffd8d2bd20feb9a4598ae1337f5aed50, type: 3}
+  - {fileID: 7512911660300833527, guid: ffd8d2bd20feb9a4598ae1337f5aed50, type: 3}
+  - {fileID: 7512911660300833527, guid: ffd8d2bd20feb9a4598ae1337f5aed50, type: 3}
+  - {fileID: 7512911660300833527, guid: ffd8d2bd20feb9a4598ae1337f5aed50, type: 3}
+  eCharacters:
+  - {fileID: 1976495865827305947, guid: fdf14e7767dab6d488826afc921181e4, type: 3}
+  - {fileID: 1976495865827305947, guid: fdf14e7767dab6d488826afc921181e4, type: 3}
+  - {fileID: 1976495865827305947, guid: fdf14e7767dab6d488826afc921181e4, type: 3}
+  - {fileID: 1976495865827305947, guid: fdf14e7767dab6d488826afc921181e4, type: 3}
+  xMargin: 200
+  yMargin: 150
+  yDelta: -50
