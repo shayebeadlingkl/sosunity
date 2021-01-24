@@ -6,6 +6,7 @@ using UnityEngine;
 // Used in and out of combat
 public class Character : MonoBehaviour
 {
+    private string characterName;
     private Sprite sprite;
     private float hp;
     private float attack;
@@ -17,6 +18,7 @@ public class Character : MonoBehaviour
     private int numActions;
     private List<Ability> abilities;
 
+    public string getCharacterName () { return this.characterName; }
     public Sprite getSprite () { return this.sprite; }
     public float getHp () { return this.hp; }
     public float getAttack () { return this.attack; }
