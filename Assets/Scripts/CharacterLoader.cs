@@ -5,9 +5,9 @@ public class JSONReader : MonoBehaviour
     void Start()
     {
         Party partyInJson = JsonUtility.FromJson<Party>(jsonFile.text);
-        foreach (GameObject character in partyInJson.GetParty())
-        {
-            Debug.Log("Found character: " + character.characterName);
-        }
+        // foreach (GameObject character in partyInJson.GetParty())
+        // {
+        //     Debug.Log("Found character: " + character.characterName);
+        // }
     }
 }
