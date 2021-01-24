@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class PlayerOverworldMovement : MonoBehaviour
 {
-    public float MoveSpeed = 5f;
+    private float MoveSpeed = 5f;
 
-    public Rigidbody2D RB;
+    private Rigidbody2D RB;
+
+    private CameraFollow camera;
 
     // Start is called before the first frame update
     void Start()
     {
+        RB = this.GetComponent<Rigidbody2D>();
+        camera = FindObjectOfType<CameraFollow>();
+        camera.SetTarget(transform);
+        camera.SetOffset(new Vector3(0, 0, -10));
+        camera.SetSmoothingFactor(8.5f);
         
     }
 
