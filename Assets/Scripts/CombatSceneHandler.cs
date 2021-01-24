@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CombatSceneHandler : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> m_pCharacters;
-    [SerializeField] private List<GameObject> m_eCharacters;
+    [SerializeField] private List<GameObject> pCharacters;
+    [SerializeField] private List<GameObject> eCharacters;
 
     [SerializeField] private int xMargin;
     [SerializeField] private int yMargin;
@@ -24,7 +24,7 @@ public class CombatSceneHandler : MonoBehaviour
         int xCoord = xMargin;
         int yCoord = camera.pixelHeight - yMargin;
 
-        foreach (var character in m_pCharacters)  {
+        foreach (var character in pCharacters)  {
             // Instantiate the character and give it the character component
             GameObject characterObj = Instantiate(character, new Vector3(xCoord, yCoord), Quaternion.identity, this.GetComponent<Transform>()) as GameObject;
             characterObj.AddComponent<Character>();
@@ -34,7 +34,7 @@ public class CombatSceneHandler : MonoBehaviour
 
         xCoord = camera.pixelWidth - xMargin;
         yCoord = camera.pixelHeight - yMargin;
-        foreach (var character in m_eCharacters)  {
+        foreach (var character in eCharacters)  {
             GameObject characterObj = Instantiate(character, new Vector3(xCoord, yCoord), Quaternion.identity, this.GetComponent<Transform>()) as GameObject;
             characterObj.AddComponent<Character>();
             enemyParty.AddPartyMember(characterObj);
